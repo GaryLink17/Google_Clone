@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* Estilos para el tooltip */
+        .icon-tooltip {
+          position: relative;
+          display: inline-block;
+          cursor: help; /* Cambia el cursor a una mano con un signo de interrogación */
+        }
+      
+        .icon-tooltip .tooltiptext {
+          visibility: hidden; /* Inicialmente oculto */
+          width: 120px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: 150%; /* Sitúa el tooltip arriba del icono */
+          left: 50%;
+          margin-left: -60px; /* Centra el tooltip horizontalmente */
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+      
+        .icon-tooltip:hover .tooltiptext {
+          visibility: visible; /* Mostrar el tooltip al pasar el cursor */
+          opacity: 1;
+        }
+      </style>
+      <title>Ejemplo de tooltip con icono</title>
+      </head>
+      <body>
+      
+      <!-- Icono de ejemplo -->
+      <div class="icon-tooltip">
+        <i class="fas fa-info-circle"></i> <!-- Icono de información de Font Awesome -->
+        <span class="tooltiptext">Este es un mensaje de ayuda para el icono.</span>
+      </div>
+</body>
+</html>
